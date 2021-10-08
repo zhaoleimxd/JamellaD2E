@@ -58,22 +58,7 @@ First, there is a line break problem in most files, those lines has breaked at w
 ---------------------------------------------------------------
 #### Gathering resource files
 
-After source code files are ready, We need to get all missing resource files defined in [JamellaD2E.rc](vs2019/JamellaD2E/JamellaD2E.rc), I've found one comrade at GitHub, he did the same thing I'm doing, I got the most of missing files from his repo.
-
-Here is his repo: [Nedkali/JamellaD2E](https://github.com/Nedkali/JamellaD2E)
-
-But it still can't cover all missing files, so I wrote scripts to copy an obviously showing error bitmap image to all the missing file's path.
-
-Then I extracted some missing files from `JamellaD2E.exe v4.0beta 9c`, include cursors, d2s files, and the iconic sound file, it is not enough, It still missing three RTF help files, we don't need helps, so I just created empty files and named them by those missing files's name.
-
----------------------------------------------------------------
-#### About resource files
-
-The version of the source code looks like it is 3.0, but I don't have the 3.0 version executable file, seems like all the missing files can be found in the 3.0 version exe.
-
-Those d2s files I've put in is definitely wrong version, but consider it just use to be templates of new character, so it doesn't matter too much, maybe it will be right if I copy it from version 3.0 exe.
-
-If you have `JamellaD2E v3.0` executable file, please send to me, that will be very helpful for this project.
+I've got a `JamellaD2E v3.0` executable file from [tytannial](https://github.com/tytannial) in [#1](https://github.com/zhaoleimxd/JamellaD2E/issues/1), and I extracted all the missing resource files from the exe, it works perfectly now.
 
 ---------------------------------------------------------------
 #### Compile
@@ -145,5 +130,6 @@ After all these works, we got a executable file of JamellaD2E, this is just what
 * Written & Open source by `Jamella`
 * Convert to VS2019 solution by `zhaoleimxd`
 * Special thanks to `Nedkali` for resource files
+* Special thanks to `tytannial` for provide a v3.0 exe to extract resource files
 
-2021-10-08
+2021-10-09
